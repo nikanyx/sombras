@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "sombras"
+theme = "hugo-freelancer-theme"
+
+[params]
+  [params.portfolio]
+    [params.portfolio.modal]
+        buttontext = "regressar"
