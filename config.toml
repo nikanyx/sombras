@@ -1,11 +1,10 @@
-baseURL = "https://nikanyx.github.io/sombras/"
+baseURL = "https://nikanyx.github.io/sombras/docs/"
 languageCode = "en-us"
 title = "sombras"
 theme = "hugo-freelancer-theme"
 publishDir = "docs"
 
 [params]
-  custom_css = ["css/custom.css"]
   email = "carolinampereira@campus.ul.pt"
 
   [params.portfolio]
