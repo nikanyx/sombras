@@ -14,6 +14,7 @@
 {{ end }}
 {{ "<!-- Custom Fonts -->" | safeHTML }}
 <link href="{{ .Site.BaseURL }}css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway|PT+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 {{ "<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->" | safeHTML }}
@@ -22,3 +23,10 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 {{ "<![endif]-->" | safeHTML }}
+<script>
+  UPLOADCARE_LOCALE = "pt";
+  UPLOADCARE_TABS = "file url facebook gdrive gphotos dropbox instagram evernote flickr skydrive";
+  UPLOADCARE_PUBLIC_KEY = "e6b2bf30a2b1e5568015";
+  UPLOADCARE_IMAGES_ONLY = true;
+</script>
+<script charset="utf-8" src="//ucarecdn.com/libs/widget/3.2.1/uploadcare.full.min.js"></script>

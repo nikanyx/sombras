@@ -2,8 +2,51 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "sombras"
 theme = "hugo-freelancer-theme"
+publishDir = "docs"
 
 [params]
+  custom_css = ["css/custom.css"]
+  email = "carolinampereira@campus.ul.pt"
+
   [params.portfolio]
-    [params.portfolio.modal]
-        buttontext = "regressar"
+
+      title = "sombras"
+
+        [params.portfolio.modal]
+            buttontext = "regressar"
+
+        [params.about]
+            title = "sobre"
+            # The about text is splitted into a left and right column
+            left = "Sombras começa por tratar da ligação única de um indivíduo ao espaço que o rodeia e todos os fragmentos de si que nele se encontram. Esta visita e exploração de uma faceta da intimidade foi evoluindo através das questões que se colocavam pelo próprio objectivo: quem estaria disposto a deixar-me entrar no seu espaço e com quem estaria eu mesma confortável a abdicar da imparcialidade de outro qualquer local? Baseando-me nisto elaborei uma rede de contactos — fosse por recomendação ou até mesmo uma questão de sorte — que se assemelha a uma árvore genealógica, partindo de mim os elos que conectam as pessoas que fotografei."
+            right = "Cada novo patamar representa mais um grau de separação na forma como nos conhecemos, os números ilustram as ramificações. Sombras, na sua ligação pessoal com o que me rodeia, acaba por registar também um pouco da geração a que pertenço, uma de filhos de uma Europa sem fronteiras, de dificuldades económicas e de uma utilização da Internet superior a qualquer outro meio, motivo da minha escolha quanto ao produto final."
+
+            [params.about.button]
+                text = "topo"
+                link = "#"
+
+        [params.contact]
+            title = "participa"
+
+            # 'error' defines error messages for invalid inputs
+            [params.contact.form.name]
+                text = "Nome"
+                error = "Por favor, insere o teu nome."
+
+            [params.contact.form.email]
+                text = "Email (opcional)"
+                error = ""
+
+            [params.contact.form.phone]
+                text = "Imagens"
+                error = "Please enter your phone number."
+
+            [params.contact.form.message]
+                text = "Detalhes (opcional)"
+                error = "Detalhes (opcional)"
+
+            [params.contact.form.button]
+                text = "Enviar"
+
+        [params.footer]
+            copyright = "Trabalho realizado no âmbito da cadeira de Projecto da licenciatura em Arte Multimédia da Faculdade de Belas-Artes da Universidade de Lisboa."

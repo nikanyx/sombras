@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <!-- div class="col-lg-8 col-lg-offset-2">
                 <form  action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}" method="POST" name="sentMessage" id="contactForm" novalidate>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -20,27 +20,28 @@
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}</label>
-                            <input type="email" name="_replyto" class="form-control" placeholder="{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}" id="email" required data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}">
+                            <input type="email" name="_replyto" class="form-control" placeholder="{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}" id="email" data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>{{ with .Site.Params.contact.form.phone.text }}{{.}}{{ end }}</label>
-                            <input type="tel" class="form-control" placeholder="{{ with .Site.Params.contact.form.phone.text }}{{.}}{{ end }}" id="phone" required data-validation-required-message="{{ with .Site.Params.contact.form.phone.error }}{{.}}{{ end }}">
+                            <label>{{ with .Site.Params.contact.form.message.text }}{{.}}{{ end }}</label>
+                            <textarea rows="5" name="message" class="form-control" placeholder="{{ with .Site.Params.contact.form.message.text }}{{.}}{{ end }}" id="message" data-validation-required-message="{{ with .Site.Params.contact.form.message.error }}{{.}}{{ end }}"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <p class="uploader-grey-button"><br />
+                            <input type="hidden" class="form-control" placeholder="{{ with .Site.Params.contact.form.phone.text }}{{.}}{{ end }}" id="phone" required data-validation-required-message="{{ with .Site.Params.contact.form.phone.error }}{{.}}{{ end }}" role="uploadcare-uploader" name="content" data-clearable="true" data-images-only="true" data-multiple="true" data-multiple-min="1" data-multiple-max="3" />
+                          </p>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div>
                         <input type="hidden"  name="_subject" value="New submission!">
                         <input type="text" name="_gotcha" style="display:none" />
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>{{ with .Site.Params.contact.form.message.text }}{{.}}{{ end }}</label>
-                            <textarea rows="5" name="message" class="form-control" placeholder="{{ with .Site.Params.contact.form.message.text }}{{.}}{{ end }}" id="message" required data-validation-required-message="{{ with .Site.Params.contact.form.message.error }}{{.}}{{ end }}"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
                     </div>
                     <br>
                     <div id="success"></div>
@@ -50,6 +51,32 @@
                         </div>
                     </div>
                 </form>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="{{ with .Site.Params.about.button.link }}{{.}}{{ end }}" class="btn btn-lg btn-outline">
+                        <i class="fa fa-{{ with .Site.Params.about.button.icon }}{{.}}{{end}}"></i> {{ with .Site.Params.about.button.text }}{{ . }}{{ end }}
+                    </a>
+                </div>
+            </div-->
+            <div class="formu">
+            <form action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}" method="POST" name="sentMessage" id="formulario" novalidate>
+                <input type="text" name="name" class="formulario" placeholder="{{ with .Site.Params.contact.form.name.text }}{{.}}{{ end }}" id="name" required data-validation-required-message="{{ with .Site.Params.contact.form.name.error }}{{.}}{{ end }}"><br />
+                <input type="email" name="_replyto" class="formulario" placeholder="{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}" id="email" data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}"><br />
+                <select class="formulario" required name="Contacto">
+                    {{ range $.Site.Data.projects }}
+                    <option value="{{ .title }}">{{ .title }}</option>
+                    {{ end }}
+                </select><br />
+                <p class="uploader-grey-button">
+                    <input type="hidden" required data-validation-required-message="{{ with .Site.Params.contact.form.phone.error }}{{.}}{{ end }}" role="uploadcare-uploader" name="content" data-clearable="true" data-images-only="true" data-multiple="true" data-multiple-min="1" data-multiple-max="3" />
+                </p>
+                <br><br>
+                <input type="submit" class="formulario" value="Enviar">
+            </form>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <a href="{{ with .Site.Params.about.button.link }}{{.}}{{ end }}" class="btn btn-lg btn-outline">
+                    <i class="fa fa-{{ with .Site.Params.about.button.icon }}{{.}}{{end}}"></i> {{ with .Site.Params.about.button.text }}{{ . }}{{ end }}
+                </a>
             </div>
         </div>
     </div>
