@@ -8,6 +8,7 @@
             </div>
         </div>
         <div class="row">
+
             <!-- div class="col-lg-8 col-lg-offset-2">
                 <form  action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}" method="POST" name="sentMessage" id="contactForm" novalidate>
                     <div class="row control-group">
@@ -58,10 +59,16 @@
                 </div>
             </div-->
             <div class="formu">
-            <form action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}" method="POST" name="sentMessage" id="formulario" novalidate>
+            Para participar neste projecto é apenas necessário completar o formulário abaixo com a seguinte informação:<br />
+            <ul><li>Nome do residente do quarto fotografado</li>
+            <li>Nome da pessoa que une o residente a esta rede <i>(seleccionar a partir da lista)</i></li>
+            <li>1 a 3 fotografias do quarto</li></ul>
+            Não é necessário colocar e-mail.<br /><br />
+            <form action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}" method="POST" name="sentMessage" id="formulario">
                 <input type="text" name="name" class="formulario" placeholder="{{ with .Site.Params.contact.form.name.text }}{{.}}{{ end }}" id="name" required data-validation-required-message="{{ with .Site.Params.contact.form.name.error }}{{.}}{{ end }}"><br />
                 <input type="email" name="_replyto" class="formulario" placeholder="{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}" id="email" data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}"><br />
                 <select class="formulario" required name="Contacto">
+                    <option value="" disabled selected>Seleccionar Contacto</option>
                     {{ range $.Site.Data.projects }}
                     <option value="{{ .title }}">{{ .title }}</option>
                     {{ end }}

@@ -505,8 +505,10 @@ footer .footer-below {
     background: #666666;
 }
 
+
 .formu {
     margin-left: 20%;
+    margin-right: 20%;
 }
 
 form .formulario, .uploader-grey-button .uploadcare--widget__button_type_open {
@@ -531,7 +533,7 @@ form .formulario:hover, .formulario.focus, .formulario:active, .formulario.activ
 form .formulario:focus {
   border: solid 2px #666666;
   background-color: #ffffff;
-  width: 74%!important;
+  width: 100%!important;
 }
 
 input[type="submit"]{
