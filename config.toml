@@ -35,6 +35,10 @@ publishDir = "docs"
                 text = "Nome"
                 error = "Por favor, insere o teu nome."
 
+                [params.contact.form.pname]
+                    text = "Nome do fotógrafo"
+                    error = "Por favor, insere o teu nome."
+
             [params.contact.form.email]
                 text = "Email (opcional)"
                 error = ""
