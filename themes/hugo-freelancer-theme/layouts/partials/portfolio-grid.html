@@ -8,8 +8,8 @@
             </div>
         </div>
         <div class="arvore">
-          <!--{{ range $.Site.Data.projects }}
-          <a href="#portfolioModal{{ .modalID }}" class="portfolio-link" data-toggle="modal">{{ .title }}</a>-->
+          <{{ range $.Site.Data.projects }}
+          <!--a href="#portfolioModal{{ .modalID }}" class="portfolio-link" data-toggle="modal">{{ .title }}</a>-->
             <div class="tree">
             	<ul>
                 <li>Tiago Q.
@@ -47,7 +47,7 @@
                 </li>
               </ul>
             </div>
-            <!---{{ end }}-->
+            {{ end }}
         </div>
     </div>
 </section>
