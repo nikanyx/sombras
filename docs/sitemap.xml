@@ -3,12 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://nikanyx.github.io/sombras/docs/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nikanyx.github.io/sombras/docs/tags/</loc>
+    <loc>https://nikanyx.github.io/sombras/docs/gens/</loc>
     <priority>0</priority>
   </url>
   

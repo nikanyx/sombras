@@ -4,6 +4,9 @@ title = "sombras"
 theme = "hugo-freelancer-theme"
 publishDir = "docs"
 
+[taxonomies]
+  gen = "gens"
+
 [params]
   email = "carolinampereira@campus.ul.pt"
 
