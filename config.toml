@@ -1,4 +1,4 @@
-baseURL = "https://nikanyx.github.io/sombras/docs/"
+baseURL = "https://nikanyx.github.io/sombras/"
 languageCode = "en-us"
 title = "sombras"
 theme = "hugo-freelancer-theme"
