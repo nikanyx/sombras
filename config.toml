@@ -15,6 +15,7 @@ publishDir = "docs"
       title = "sombras"
 
         [params.portfolio.modal]
+            client = "Client"
             buttontext = "regressar"
 
         [params.about]
@@ -33,11 +34,11 @@ publishDir = "docs"
             # 'error' defines error messages for invalid inputs
             [params.contact.form.name]
                 text = "Nome"
-                error = "Por favor, insere o teu nome."
+                error = "Por favor, insere o nome."
 
-                [params.contact.form.pname]
-                    text = "Nome do fotógrafo"
-                    error = "Por favor, insere o teu nome."
+            [params.contact.form.pname]
+                text = "Nome do fotógrafo"
+                error = "Por favor, insere o nome."
 
             [params.contact.form.email]
                 text = "Email (opcional)"
