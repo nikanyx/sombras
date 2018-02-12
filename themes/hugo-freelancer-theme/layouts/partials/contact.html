@@ -20,6 +20,7 @@
                 <input type="email" name="_replyto" class="formulario" placeholder="{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}" id="email" data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}"><br />
                 <select class="formulario" required name="Contacto">
                     <option value="" disabled selected>Seleccionar Contacto</option>
+                    <option value="Carolina C. Pereira">Carolina C. Pereira</option>
                     <option value="Tiago Q.">Tiago Q.</option>
                     {{ range $.Site.Data.projects }}
                     <option value="{{ .title }}">{{ .title }}</option>

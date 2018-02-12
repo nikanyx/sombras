@@ -239,8 +239,15 @@ section h2 {
 }
 
 /* Network style */
+.tree {
+  display: flex;
+  justify-content: center;
+}
+
 .tree ul {
-	padding-top: 20px; position: relative;
+	padding-top: 20px;
+  padding-left: 0px;
+  position: relative;
 	transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;

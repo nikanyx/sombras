@@ -1,0 +1,10 @@
+<section id="portfolio">
+<div class="container">
+ola
+<ul>
+  {{ range .Site.Taxonomies.gens.1 }}
+    <li><a href="#portfolioModal{{ .modalID }}" class="portfolio-link" data-toggle="modal">{{ .title }}</a></li>
+  {{ end }}
+</ul>
+</div>
+</section>
